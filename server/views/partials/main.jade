@@ -1,0 +1,5 @@
+﻿span {{model.myMessage}}
+
+div you should see some data from mongo below
+ul(ng-repeat='item in model.demoData')
+    li {{ item.name }} - {{ item._id }}
