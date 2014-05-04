@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="public\javascripts\angularapp\main\main.controller.js" />
+    <Compile Include="public\javascripts\angularapp\security\login.controller.js" />
     <Compile Include="public\javascripts\angularapp\services\demo.service.js" />
     <Compile Include="server.js" />
     <Compile Include="public\javascripts\angularapp\app.js" />
@@ -50,6 +51,7 @@
     <Folder Include="bin\" />
     <Folder Include="public\javascripts\angularapp\" />
     <Folder Include="public\javascripts\angularapp\main\" />
+    <Folder Include="public\javascripts\angularapp\security\" />
     <Folder Include="public\javascripts\angularapp\services\" />
     <Folder Include="server\modules\" />
     <Folder Include="server\views\partials\" />
@@ -61,9 +63,11 @@
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="server\views\" />
+    <Folder Include="server\views\partials\security\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="server\views\partials\main.jade" />
+    <Content Include="server\views\partials\security\login.jade" />
     <Content Include="server\views\scripts.jade" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />

@@ -24,8 +24,9 @@ var mainRoute=express.Router();
 //create a server route for the partial jade views that will be used by angular for some of the template
 //url's so instead of having static html templates, we can also use dynamic jade templates
 // (e.g. /partials/main  /partials/customerlist)
-mainRoute.get('/partials/:partialPath', function(req,res) {
-    res.render('partials/' + req.params.partialPath);
+mainRoute.get('/partials/*', function(req,res) {
+     
+    res.render('partials/' + req.params["0"]);
     });
 
 mainRoute.get('/demoData', routes.demoData);

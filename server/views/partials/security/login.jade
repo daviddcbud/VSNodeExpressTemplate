@@ -1,0 +1,7 @@
+﻿.navbar-right(ng-controller="LoginCtrl")
+  form.navbar-form
+    .form-group
+      input.form-control(placeholder="user name", ng-model="username")
+    .form-group
+      input.form-control(type="password", ng-model="password", placeholder="password")
+    btn.btn.btn-primary(ng-click="signin()") Sign In
